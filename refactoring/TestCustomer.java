@@ -16,16 +16,16 @@ public class TestCustomer extends TestCase {
 			Rental rental3=new Rental(movie3,2);
 			
 			//CLIENTES
-			Customer customer1=new Customer("name1");
-			Customer customer2=new Customer("name2");
+			Customer customer1=new Customer("Carlos");
+			Customer customer2=new Customer("Maria");
 			
 			
 			customer1.addRental(rental1);
 			customer2.addRental(rental2);
 			customer2.addRental(rental3);
 			
-			assertEquals(customer2.statement(),"Rental Record for name2"+"\n"+"	Origen	2.0"+"\n"+"	Batman v Superman	6.0"+"\n"+"Amount owed is 8.0"+"\n"+"You earned 3 frequent renter points");
-			assertEquals(customer1.statement(),"Rental Record for name1"+"\n"+"	La sirenita	3.0"+"\n"+"Amount owed is 3.0"+"\n"+"You earned 1 frequent renter points");
+			assertEquals(customer2.statement(),"Rental Record for Maria"+"\n"+"	Origen	2.0"+"\n"+"	Batman v Superman	6.0"+"\n"+"Amount owed is 8.0"+"\n"+"You earned 3 frequent renter points");
+			assertEquals(customer1.statement(),"Rental Record for Carlos"+"\n"+"	La sirenita	3.0"+"\n"+"Amount owed is 3.0"+"\n"+"You earned 1 frequent renter points");
 		
 
 			
