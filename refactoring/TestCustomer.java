@@ -29,7 +29,9 @@ public class TestCustomer extends TestCase {
 		
 			assertEquals(customer1.htmlStatement(),"<H1>Rentals for <EM>Carlos</EM></H1><P>"+"\n"+"La sirenita: 3.0<BR>"+"\n"+"<P>You owe <EM>3.0</EM><P>"+"\n"+"On this rental rental you earned <EM>1</EM> frequent renter points<P>");
 
+			movie1.getFrequentRenterPoints(7);
 			
+			assertEquals(movie1.getFrequentRenterPoints(7),1);
 			
 		}
 
