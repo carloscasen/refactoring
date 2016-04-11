@@ -24,9 +24,12 @@ public class TestCustomer extends TestCase {
 			customer2.addRental(rental2);
 			customer2.addRental(rental3);
 			
+			assertEquals(customer2.statement(),"Rental Record for name2"+"\n"+"	Origen	2.0"+"\n"+"	Batman v Superman	6.0"+"\n"+"Amount owed is 8.0"+"\n"+"You earned 3 frequent renter points");
+			assertEquals(customer1.statement(),"Rental Record for name1"+"\n"+"	La sirenita	3.0"+"\n"+"Amount owed is 3.0"+"\n"+"You earned 1 frequent renter points");
+		
+
 			
-			assertEquals(customer2.statement(),"Rental Record for name2"+"\n"+"   Origen 2.0"+"\n"+"   Batman v Superman 6.0"+"\n"+"Amount owed is 8.0"+"\n"+"You earned 3 frequent renter points");
-			assertEquals(customer1.statement(),"Rental Record for name1"+"\n"+"   La sirenita 3.0"+"\n"+"Amount owed is 3.0"+"\n"+"You earned 1 frequent renter points");
+			
 		}
 
 }

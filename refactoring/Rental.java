@@ -1,5 +1,7 @@
 package org.pris2.refactoring;
 
+import java.util.Enumeration;
+
 public class Rental {
 
 private Movie movie;
@@ -17,4 +19,5 @@ public int getDaysRented() {
 public Movie getMovie() {
 	return movie;
 }
+
 }
