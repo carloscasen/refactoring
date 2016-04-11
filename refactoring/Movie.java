@@ -11,7 +11,7 @@ public class Movie {
 
 	public Movie(String intitle, int inpriceCode) {
 		title = intitle;
-		priceCode = inpriceCode;
+		setPriceCode(inpriceCode);
 	}
 
 	public int getPriceCode() {
